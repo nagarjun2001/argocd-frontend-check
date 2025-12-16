@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: frontend-service
+  namespace: liveaaz-frontend
+spec:
+  selector:
+    app: liveaaz-frontend
+  type: LoadBalancer
+  ports:
+  - port:  3000
+    targetPort:  80

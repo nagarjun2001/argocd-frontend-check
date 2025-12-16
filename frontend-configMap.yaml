@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: frontend-configmap
+  namespace: liveaaz-frontend
+  labels:
+    app: liveaaz-frontend
+data:
+  VITE_MULTIPLE_IMAGE_DETECT_URL: "https://liveaaz360stg.relevantz.com:5004/upload-multiple/"
+  VITE_MULTIPLE_VIDEO_DETECT_URL: "https://liveaaz360stg.relevantz.com:5004/upload-video/"
+  VITE_BACKGROUND_VIDEO_PATH: "/uploads/backgroundTheme"
+  VITE_BACKEND_BASE_URL: "http://127.0.0.1:30542/liveaaz"
+  VITE_BACKEND_SOCKET_URL: "http://127.0.0.1:30542"
